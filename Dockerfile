@@ -38,7 +38,8 @@ RUN cd /opt && \
 
 COPY mattermost-launch.sh /opt/mattermost/bin/mattermost-launch.sh
 COPY config.json /opt/mattermost/config/config.json
-RUN chmod 777 /opt/mattermost/config/config.json
+RUN chmod 777 /opt/mattermost/config/config.json && \
+    chmod 777 /opt/mattermost/logs/
 
 # Make sure we can run with random UID, even in standalone docker
 USER 2273
