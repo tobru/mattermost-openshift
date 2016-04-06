@@ -1,12 +1,12 @@
-# Mattermost for OpenShift Enterprise 3
+# Mattermost for OpenShift Origin 3
 
-This is instant mattermost application for OpenShift Enterprise 3.
+This is instant mattermost application for OpenShift Origin 3.
 
 The license applies to all files insinde this repository, not mattermost itself.
 
 ## Prerequisites
 
-OpenShift 3 up and running, including the capability to create a new project.
+OpenShift Origin 3 up and running, including the capability to create a new project.
 
 
 ## Installation
