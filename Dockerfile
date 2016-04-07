@@ -39,7 +39,8 @@ RUN cd /opt && \
 COPY mattermost-launch.sh /opt/mattermost/bin/mattermost-launch.sh
 COPY config.json /opt/mattermost/config/config.json
 RUN chmod 777 /opt/mattermost/config/config.json && \
-    chmod 777 /opt/mattermost/logs/
+    mkdir /opt/mattermost/data && \
+    chmod 777 /opt/mattermost/logs/ /opt/mattermost/data
 
 EXPOSE 8065
 
